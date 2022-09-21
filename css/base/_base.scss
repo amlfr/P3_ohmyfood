@@ -7,10 +7,17 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-size: 12px;
 }
 
 /*Base style for links*/
 
 a {
     text-decoration: none;
+}
+
+/*Logo font*/
+
+.brand-logo {
+    font-family: 'Shrikhand', cursive;
 }
