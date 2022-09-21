@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix": "postcss ./css/main.css --use autoprefixer -d ./css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/amlfr/P3_ohmyfood/issues"
   },
-  "homepage": "https://github.com/amlfr/P3_ohmyfood#readme"
+  "homepage": "https://github.com/amlfr/P3_ohmyfood#readme",
+  "browserslist": "last 4 versions"
 }
