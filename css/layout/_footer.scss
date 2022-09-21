@@ -6,6 +6,7 @@
     background-color: $dark-color;
     padding: 2vh 6vw;
     display: flex;
+    flex-direction: column;
     &__heading {
         font-size: 1.9rem;
         margin: 0 0 10px;
