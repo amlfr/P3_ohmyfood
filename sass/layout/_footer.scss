@@ -3,21 +3,26 @@
 // -----------------------------------------------------------------------------
 
 .footer {
-    background-color: $dark-color;
-    padding: 2vh 6vw;
+    background-color: $color-dark;
+    padding: 20px 25px 45px;
     display: flex;
     flex-direction: column;
+    color: white;
     &__heading {
-        font-size: 1.9rem;
-        margin: 0 0 10px;
-        color: white;
+        font-size: 1.15rem;
+        font-weight: 400;
+        margin: 0 0 15px;
     }
     &__icon {
-        color: white;
-        font-size: 2rem;
+        font-size: 0.8rem;
+        margin: 0 5px 0 0;
     }
     &__link {
+        font-size: 0.95rem;
         color: white;
-        font-size: 2rem;
+        margin: 5px 0;
+    }
+    &__div {
+        margin: 3px 0;
     }
 }

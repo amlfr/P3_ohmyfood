@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the buttons components.
+// -----------------------------------------------------------------------------
+
+.btn--secondary {
+    border-radius: 30px;
+    border: none;
+    padding: 15px 25px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background: linear-gradient(175deg, rgba(255,121,218,1) 12%, rgba(147,86,220,1) 100%);
+    box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
