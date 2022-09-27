@@ -11,11 +11,17 @@
         align-items: center;
         background-color: $color-grey;
         padding: 15px 0;
+        @include tablet {
+            padding: 35px 0;
+        }
         &--col {
             flex-direction: column;
             background-color: $color-grey-light;
             padding: 40px 0 55px;
             text-align: center;
+            @include tablet {
+                padding: 90px 0 125px;
+            }
         }
     }
     &__icon {
@@ -23,17 +29,32 @@
         margin: 0 -5px;
         position: relative;
         right: 20px;
+        @include tablet {
+            font-size: 1.75rem;
+            right: 45px;
+            margin: 0 -10px;
+        }
     }
     &__heading {
         font-size: 1.4rem;
         width: 61%;
+        @include tablet {
+            font-size: 3rem;
+        }
     }
     &__text {
         font-size: 1.15rem;
         margin: 15px 0 30px;
+        @include tablet{
+            font-size: 2.2rem;
+            margin: 25px 0 70px;
+        }
         &--current {
             font-size: 1.05rem;
             font-weight: 500;
+            @include tablet{
+                font-size: 2.1rem;
+            }
         }
     }
 }
@@ -42,10 +63,17 @@
 /*Guide section*/
 
 .guide {
-    margin: 0 25px 70px;
+    padding: 0 25px 70px;
+    @include tablet {
+        padding: 0 50px 70px;
+    }
     &__heading {
         font-size: 1.45rem;
-        margin: 45px 0 30px; 
+        margin: 45px 0 30px;
+        @include tablet {
+            font-size: 3rem;
+            margin: 90px 0 60px;
+        }
     }
     &__container {
         display: flex;
@@ -53,6 +81,9 @@
         justify-content: center;
         flex-direction: column;
         gap: 30px;
+        @include tablet {
+            gap: 60px;
+        }
     }
     &__outer {
         background-color: $color-grey-light;
@@ -63,12 +94,15 @@
         border-radius: 20px;
         width: 100%;
         padding: 20px 0;
+        @include tablet {
+            padding: 55px 0;
+            border-radius: 45px;
+        }
     }
     &__number {
         background-color: $color-primary;
         color: white;
         font-size: 0.8rem;
-        padding: 5px;
         border-radius: 50%;
         position: relative;
         width: 25px;
@@ -76,22 +110,42 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include tablet {
+            font-size: 1.6rem;
+            width: 50px;
+            height: 50px;
+        }
         &--first{
             right: 21%;
+            @include tablet {
+                right: 22%;
+            }
         }
         &--second {
             right: 22%;
+            @include tablet {
+                right: 23%;
+            }
         }
         &--third{
             right: 21%;
+            @include tablet {
+                right: 22%;
+            }
         }
     }
     &__icon {
         font-size: 1.2rem;
         position: relative;
         color: rgb(66, 66, 66);
+        @include tablet {
+            font-size: 2.4rem;
+        }
         &--first {
             right: 12%;
+            @include tablet {
+                right: 11%;
+            }
         }
         &--second {
             right: 14%;
@@ -103,14 +157,23 @@
     &__text{
         font-weight: 500;
         position: relative; 
+        @include tablet {
+            font-size: 2.1rem;
+        }
         &--first {
             right: 3%;
+            @include tablet {
+                right: 2%;
+            }
         }
         &--second {
             right: 5%;
         }
         &--third {
             right: 5%;
+            @include tablet {
+                right: 4%;
+            }
         }
     }
 }
@@ -121,9 +184,16 @@
 .restaurant {
     padding: 25px 25px 40px;
     background-color: $color-grey-light;
+    @include tablet {
+        padding: 75px 50px 110px;
+    }
     &__heading {
         font-size: 1.60rem;
         margin: 30px 0 20px;
+        @include tablet {
+            font-size: 3.1rem;
+            margin: 30px 0 60px;
+        }
     }
     &__container {
         width: 100%;
@@ -133,6 +203,9 @@
         justify-content: center;
         flex-direction: column;
         gap: 15px;
+        @include tablet {
+            gap: 30px;
+        }
     }
     &__wrapper {
         width:100%;
@@ -144,12 +217,24 @@
         width: 100%;
         height: 260px;
         box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.05);
+        @include tablet {
+            height: 520px;
+            border-radius: 35px;
+        }
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.10);
+        }
     }
     &__img {
         object-fit: cover;
         width: 100%;
         height: 70%;
         border-radius: 20px 20px 0 0;
+        @include tablet {
+            border-radius: 35px 35px 0 0;
+            object-position: 50% 60%;
+        }
     }
     &__inner {
         height: 28%;
@@ -157,15 +242,28 @@
         align-items: center;
         justify-content: space-between;
         padding: 0 25px 0 15px;
+        @include tablet {
+            padding: 0 40px 0 30px;
+        }
     }
     &__card-heading {
         font-size: 1.2rem;
         margin: 0 0 5px;
+        @include tablet {
+            font-size: 2.4rem;
+            margin: 0 0 10px;
+        }
     }
     &__card-text {
         font-size: 1.1rem;
+        @include tablet {
+            font-size: 2.2rem;
+        }
     }
     &__card-icon {
         font-size: 1.4rem;
+        @include tablet {
+            font-size: 2.8rem;
+        }
     }
 }
