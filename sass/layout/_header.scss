@@ -12,5 +12,9 @@
     &__logo {
         margin: 25px 0 10px;
         height: 30px;
+        @include tablet {
+            margin: 40px 0 30px;
+            height: 50px;
+        }
     } 
 }
