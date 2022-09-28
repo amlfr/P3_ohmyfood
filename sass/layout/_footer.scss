@@ -11,6 +11,9 @@
     @include tablet {
         padding: 35px 60px 50px;
     }
+    @include desktop {
+        padding: 25px 45px 40px;
+    }
     &__heading {
         font-size: 1.15rem;
         font-weight: 400;
@@ -18,6 +21,10 @@
         @include tablet {
             font-size: 2.2rem;
             margin: 0 0 20px;
+        }
+        @include desktop {
+            font-size: 1.4 rem;
+            margin: 0 0 15px;
         }
     }
     &__icon {
@@ -27,14 +34,21 @@
             font-size: 1.5rem;
             margin: 0 10px;
         }
+        @include desktop {
+            font-size: 1.1rem;
+            margin: 0 5px;
+        }
     }
     &__link {
         font-size: 0.95rem;
         color: white;
-        margin: 10px 0 0;
+        margin: 0 0 10px;
         @include tablet {
             font-size: 1.8rem;
-            margin: 0 0 20px;
+            margin: 0 0 10px;
+        }
+        @include desktop {
+            font-size: 1.2rem;
         }
     }
     &__div {
