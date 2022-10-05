@@ -2,7 +2,7 @@
 // This file contains all styles related to the buttons components.
 // -----------------------------------------------------------------------------
 
-.btn--secondary {
+.btn {
     border-radius: 30px;
     border: none;
     padding: 15px 25px;
@@ -22,11 +22,15 @@
         border-radius: 40px;
         padding: 20px 35px;
     }
-    &-menu {
+    &--menu {
         padding: 15px 45px;
         @include tablet {
             padding: 30px 90px;
             font-size: 2rem;
+        }
+        @include desktop {
+            font-size: 1.5 rem;
+            padding: 25px 60px; 
         }
     }
 }
