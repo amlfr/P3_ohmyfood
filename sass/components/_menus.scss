@@ -59,9 +59,21 @@
     &__icon {
         font-size: 1.5rem;
         margin: 0 20px 0 0;
+        cursor: pointer;
         @include tablet {
             font-size: 3rem;
             margin: 0 40px 0 0;
+        }
+    }
+    &__container {
+        display:flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        @include desktop {
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
         }
     }
 }
@@ -71,7 +83,7 @@
 .course {
     width: 100%;
     @include desktop {
-        width: 80%;
+        width: 25%;
     }
     &__heading {
         font-size: 1.1rem;
@@ -79,6 +91,9 @@
         margin: 0;
         @include tablet {
             font-size: 2.2rem;
+        }
+        @include desktop {
+            font-size: 1.5rem;
         }
         &:after {
             content: "";
@@ -96,6 +111,7 @@
     &__container {
         display: flex;
         flex-direction: column;
+        width: 100%;
         gap: 15px;
         margin: 20px 0 0 0;
         @include tablet {
@@ -105,8 +121,7 @@
     }
     &__btn {
         width: 100%;
-        height: 70px;
-        padding: 0 25px 10px 10px;
+        padding: 13px 25px 13px 12px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -114,9 +129,12 @@
         box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
         background-color: white;
         @include tablet {
-            height: 140px;
             border-radius: 35px;
-            padding: 0 50px 20px 25px;
+            padding: 20px 50px 20px 25px;
+        }
+        @include desktop {
+            border-radius: 20px;
+            padding: 13px 25px 13px 12px;
         }
     }
     &__infos {
@@ -125,7 +143,10 @@
     &__dish {
         font-size: 1.1rem;
         @include tablet {
-            font-size: 2.2rem;
+            font-size: 2.1rem;
+        }
+        @include desktop {
+            font-size: 1.3rem
         }
     }
     &__text{
@@ -139,14 +160,20 @@
             font-size: 2rem;
             margin: 15px 0 0 0;
         }
+        @include desktop {
+            font-size: 1.1rem;
+            margin: 5px 0 0 0;
+        }
     }
-
     &__price {
         font-size: 0.9rem;
         font-weight: 500;
         margin: 0 0 1px;
         @include tablet {
             font-size: 2rem;
+        }
+        @include desktop {
+            font-size: 1rem;
         }
     }
 }

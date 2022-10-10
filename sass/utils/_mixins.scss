@@ -2,6 +2,8 @@
 // This file contains all application-wide Sass mixins
 // -----------------------------------------------------------------------------
 
+/*Responsive layout mixins*/
+
 @mixin tablet {
     @media screen and (min-width: map-get($breakpoints, tablet)){
     @content;
