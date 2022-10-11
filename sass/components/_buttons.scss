@@ -33,4 +33,8 @@
             padding: 20px 30px; 
         }
     }
+    &:hover {
+        background: linear-gradient(175deg, hsl(317, 100%, 77%) 12%, hsl(267, 66%, 63%) 100%);
+        box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.15);
+    }
 }
