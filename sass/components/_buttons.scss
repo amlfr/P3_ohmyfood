@@ -9,7 +9,7 @@
     color: white;
     font-size: 1.05rem;
     font-weight: 500;
-    background: linear-gradient(175deg, rgba(255,121,218,1) 12%, rgba(147,86,220,1) 100%);
+    background: linear-gradient(175deg, $color-secondary 12%, $color-primary 100%);
     box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.08);
     cursor: pointer;
     @include tablet {
@@ -34,7 +34,7 @@
         }
     }
     &:hover {
-        background: linear-gradient(175deg, hsl(317, 100%, 77%) 12%, hsl(267, 66%, 63%) 100%);
+        background: linear-gradient(175deg, scale-color($color-secondary, $lightness: 10%) 12%, scale-color($color-primary, $lightness: 10%) 100%);
         box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.15);
     }
 }
