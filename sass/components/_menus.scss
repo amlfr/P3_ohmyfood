@@ -68,13 +68,20 @@
         }
         &:hover ~ .menu__icon--hide {
                 transform: translateY(-25px);
-                transition-duration: 500ms;
+                transition-duration: 300ms;
+                @include tablet {
+                    transform: translateY(-50px);
+                }
             }
         &--hide {
             height: 25px;
             width: 25px;
             background-color: $color-grey-light;
             z-index: 1;
+            @include tablet {
+                height: 50px;
+                width: 50px;
+            }
         }
         &--bg {
             color: $color-primary;
