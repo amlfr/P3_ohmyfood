@@ -157,7 +157,7 @@
         overflow: hidden;
         cursor: pointer;
         &:hover > .course__select{
-            animation: 1s ease-out SlideIn;
+            animation: 0.8s linear SlideIn;
             animation-fill-mode: forwards;
         }
         &:hover .course__checkmark {
@@ -182,7 +182,7 @@
             margin: 0 50px 10px 25px;
         }
         @include desktop {
-            margin: 13px 25px 13px 12px;
+            margin: 0 25px 13px 12px;
         }
       }
     &__infos {
@@ -192,6 +192,7 @@
         font-size: 1.1rem;
         white-space: nowrap;
         text-overflow: ellipsis;
+        overflow: hidden;
         @include tablet {
             font-size: 2.1rem;
         }
