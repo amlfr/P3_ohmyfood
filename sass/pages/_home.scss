@@ -477,6 +477,9 @@
                 @include tablet {
                     transform: translateY(-25px);
                 }
+                @include desktop {
+                    transform: translateY(-35px);
+                }
             }
         &--hide {
             height: 25px;
@@ -486,6 +489,10 @@
             @include tablet {
                 height: 25px;
                 width: 25px;
+            }
+            @include desktop {
+                height: 33px;
+                width: 33px;
             }
         }
         &--bg {
