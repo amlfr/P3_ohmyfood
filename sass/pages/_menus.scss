@@ -227,19 +227,19 @@
     }
     &__select {
         background-color: #99E2D0;
-        height: 57px;
+        height: 64px;
         width: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0px -25px -10px 0;
+        margin: -10px -25px -10px 0;
         @include tablet {
             height: 110px;
-            margin: 0px -50px -10px 0;
+            margin: -10px -50px -10px 0;
         }
         @include desktop {
             height: 76px;
-            margin: 0px -25px -13px 0;
+            margin: -13px -25px -13px 0;
         }
     }
     &__checkmark {
